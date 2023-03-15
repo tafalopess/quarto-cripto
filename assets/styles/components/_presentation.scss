@@ -3,6 +3,7 @@
 .main-container {
     .presentation {
         padding: 23rem 6rem;
+        width: 100%;
         .presentation-content {
             background: $fourth-color;
             padding: 3rem;
@@ -24,10 +25,6 @@
                 color: $first-color;
                 font-weight: 500;
             }
-        }
-
-        .presentation-content:hover {
-            box-shadow: 0 0 35px $third-color;
         }
     }
 }

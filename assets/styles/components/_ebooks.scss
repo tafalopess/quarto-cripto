@@ -1,0 +1,94 @@
+@import "./../abstract/var";
+
+.ebooks-container-title {
+    padding: 12rem 9rem 9rem 9rem;
+    color: $fourth-color;
+    font-weight: 900;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px $first-color;
+}
+
+.ebooks {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 9rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .ebook-content {
+        width: 700px;
+        height: 150px;
+        box-sizing: border-box;
+        background: $first-color;
+        border-radius: 1rem;
+        border: 1px solid rgba(255, 255, 255, .2);
+        display: flex;
+        margin-top: 1rem;
+
+        .ebook-img{
+            img{
+                height: 100%;
+                border-top-left-radius: 1rem;
+                border-bottom-left-radius: 1rem;
+                border: 1px solid rgba(255, 255, 255, .2);
+            }
+        }
+        .ebook-description {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .ebook-title {
+                color: $second-color;
+                font-weight: bold;
+                line-height: 1.5em;
+            }
+        }
+        .buttons {
+            display: flex;
+            padding-right: 1rem;
+            gap: 1rem;
+            .btn {
+                padding: .3rem .3rem;
+                font-size: .8rem;
+                font-weight: bold;
+                color: $third-color;
+                background-color: $first-color;
+                border-radius: .4rem;
+                border: 2px solid $third-color;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            .btn:hover {
+                background: $third-color;
+                color: $first-color;
+            }
+        }
+    }
+    .ebook-content:hover {
+        border: 1px solid $third-color;
+        box-shadow: 0 0 10px $third-color;
+    }
+}
+
+.telegram-community {
+    padding: 3rem 9rem;
+    background-color: $first-color;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $fourth-color;
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $third-color;
+    }
+
+    a:hover {
+        text-shadow: 0 0 5px $third-color;
+    }
+}
