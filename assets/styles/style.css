@@ -261,16 +261,17 @@ header .social-media img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 .ebooks .ebook-content {
-  width: 700px;
-  height: 150px;
+  width: 500px;
+  height: 200px;
   box-sizing: border-box;
   background: #1B1A17;
   border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
-  margin-top: 1rem;
+  flex-grow: 1;
 }
 .ebooks .ebook-content .ebook-img img {
   height: 100%;
@@ -295,8 +296,8 @@ header .social-media img {
   gap: 1rem;
 }
 .ebooks .ebook-content .buttons .btn {
-  padding: 0.3rem 0.3rem;
-  font-size: 0.8rem;
+  padding: 1rem 1rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #E45826;
   background-color: #1B1A17;
@@ -350,6 +351,10 @@ header .social-media img {
   .ebooks .ebook-content .buttons {
     gap: 0.5rem;
     padding-right: 0.5rem;
+  }
+  .ebooks .ebook-content .buttons .btn {
+    padding: 0.3rem 0.3rem;
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 420px) {
