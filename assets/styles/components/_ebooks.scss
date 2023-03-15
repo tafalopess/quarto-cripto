@@ -28,29 +28,33 @@
         display: flex;
         margin-top: 1rem;
 
-        .ebook-img{
-            img{
+        .ebook-img {
+            img {
                 height: 100%;
                 border-top-left-radius: 1rem;
                 border-bottom-left-radius: 1rem;
                 border: 1px solid rgba(255, 255, 255, .2);
             }
         }
+
         .ebook-description {
             padding: 1rem;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+
             .ebook-title {
                 color: $second-color;
                 font-weight: bold;
                 line-height: 1.5em;
             }
         }
+
         .buttons {
             display: flex;
             padding-right: 1rem;
             gap: 1rem;
+
             .btn {
                 padding: .3rem .3rem;
                 font-size: .8rem;
@@ -62,12 +66,14 @@
                 cursor: pointer;
                 text-decoration: none;
             }
+
             .btn:hover {
                 background: $third-color;
                 color: $first-color;
             }
         }
     }
+
     .ebook-content:hover {
         border: 1px solid $third-color;
         box-shadow: 0 0 10px $third-color;
@@ -90,5 +96,43 @@
 
     a:hover {
         text-shadow: 0 0 5px $third-color;
+    }
+}
+
+@media (max-width: 640px) {
+    .telegram-community{
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .ebooks-container-title {
+        padding: 8rem 3rem 3rem 3rem;
+        font-size: 2.5rem;
+    }
+
+    .ebooks{
+        width: 95%;
+        .ebook-content{
+            height: 200px;
+            .buttons {
+                gap: .5rem;
+                padding-right: .5rem;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 420px) {
+    .ebooks{
+        width: 98%;
+        .ebook-description{
+            padding: .5rem;
+        }
+        .ebook-content{
+            width: 400px;
+
+        }
     }
 }

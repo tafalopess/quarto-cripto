@@ -35,3 +35,20 @@
         }
     }
 }
+
+
+@media (max-width: 500px) {
+    .cta {
+        .cta-content{
+            padding: 3rem;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .cta {
+        .cta-content{
+            padding: 3rem .5rem;
+        }
+    }
+}

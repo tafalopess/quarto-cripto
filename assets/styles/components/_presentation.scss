@@ -28,3 +28,23 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .main-container {
+        .presentation {
+            padding: 18rem 2rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .main-container{
+        .presentation{
+            padding: 12rem 0;
+            .presentation-content{
+                padding: 3rem .5rem;
+                border-radius: 0;
+            }
+        }
+    }
+}

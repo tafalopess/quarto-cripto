@@ -76,6 +76,21 @@ header .social-media img {
   width: 2rem;
 }
 
+@media (max-width: 840px) {
+  .nav-links {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    padding: 0.5rem 2.25rem;
+  }
+}
+@media (max-width: 420px) {
+  header {
+    padding: 0.5rem 0.5rem;
+  }
+}
 .main-container .presentation {
   padding: 23rem 6rem;
   width: 100%;
@@ -101,6 +116,20 @@ header .social-media img {
   font-weight: 500;
 }
 
+@media (max-width: 600px) {
+  .main-container .presentation {
+    padding: 18rem 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .main-container .presentation {
+    padding: 12rem 0;
+  }
+  .main-container .presentation .presentation-content {
+    padding: 3rem 0.5rem;
+    border-radius: 0;
+  }
+}
 .cta .cta-content {
   padding: 3rem 9rem;
   background-color: #1B1A17;
@@ -132,6 +161,16 @@ header .social-media img {
   color: #E45826;
 }
 
+@media (max-width: 500px) {
+  .cta .cta-content {
+    padding: 3rem;
+  }
+}
+@media (max-width: 420px) {
+  .cta .cta-content {
+    padding: 3rem 0.5rem;
+  }
+}
 .courses-container {
   padding-bottom: 6rem;
 }
@@ -148,6 +187,7 @@ header .social-media img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 .courses-container .courses .course-content {
   width: 300px;
@@ -158,6 +198,7 @@ header .social-media img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 1rem;
 }
 .courses-container .courses .course-content .course-img {
   height: 40%;
@@ -197,6 +238,12 @@ header .social-media img {
   box-shadow: 0 0 10px #E45826;
 }
 
+@media (max-width: 550px) {
+  .courses-container .courses-container-title {
+    padding: 8rem 3rem 3rem 3rem;
+    font-size: 2.5rem;
+  }
+}
 .ebooks-container-title {
   padding: 12rem 9rem 9rem 9rem;
   color: #E6D5B8;
@@ -282,4 +329,37 @@ header .social-media img {
 }
 .telegram-community a:hover {
   text-shadow: 0 0 5px #E45826;
+}
+
+@media (max-width: 640px) {
+  .telegram-community {
+    padding: 3rem;
+  }
+}
+@media (max-width: 550px) {
+  .ebooks-container-title {
+    padding: 8rem 3rem 3rem 3rem;
+    font-size: 2.5rem;
+  }
+  .ebooks {
+    width: 95%;
+  }
+  .ebooks .ebook-content {
+    height: 200px;
+  }
+  .ebooks .ebook-content .buttons {
+    gap: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+@media (max-width: 420px) {
+  .ebooks {
+    width: 98%;
+  }
+  .ebooks .ebook-description {
+    padding: 0.5rem;
+  }
+  .ebooks .ebook-content {
+    width: 400px;
+  }
 }/*# sourceMappingURL=style.css.map */

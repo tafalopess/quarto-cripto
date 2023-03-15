@@ -44,3 +44,21 @@ header {
         }
     }
 }
+
+@media (max-width: 840px) {  
+        .nav-links {
+            display: none;
+        }
+}
+
+@media (max-width: 600px) {
+    header{
+        padding: .5rem 2.25rem;
+    }
+}
+
+@media (max-width: 420px) {
+    header {
+        padding: .5rem .5rem;
+    }
+}
