@@ -96,6 +96,9 @@ footer {
             flex-direction: column;
             gap: 3rem;
             align-items: center;
+            .logo {
+                order: 3;
+            }
         }
     }
 }

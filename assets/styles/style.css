@@ -457,4 +457,7 @@ footer .copywrite a {
     gap: 3rem;
     align-items: center;
   }
+  footer .footer-container .logo {
+    order: 3;
+  }
 }/*# sourceMappingURL=style.css.map */
