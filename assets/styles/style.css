@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -244,7 +245,10 @@ header .social-media img {
     font-size: 2.5rem;
   }
 }
-.ebooks-container-title {
+.ebooks-container {
+  padding-bottom: 10rem;
+}
+.ebooks-container .ebooks-container-title {
   padding: 12rem 9rem 9rem 9rem;
   color: #E6D5B8;
   font-weight: 900;
@@ -253,8 +257,7 @@ header .social-media img {
   text-transform: uppercase;
   text-shadow: 0 0 20px #1B1A17;
 }
-
-.ebooks {
+.ebooks-container .ebooks {
   width: 80%;
   margin: auto;
   padding-bottom: 9rem;
@@ -263,7 +266,7 @@ header .social-media img {
   flex-wrap: wrap;
   gap: 1rem;
 }
-.ebooks .ebook-content {
+.ebooks-container .ebooks .ebook-content {
   width: 500px;
   height: 200px;
   box-sizing: border-box;
@@ -273,29 +276,29 @@ header .social-media img {
   display: flex;
   flex-grow: 1;
 }
-.ebooks .ebook-content .ebook-img img {
+.ebooks-container .ebooks .ebook-content .ebook-img img {
   height: 100%;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-.ebooks .ebook-content .ebook-description {
+.ebooks-container .ebooks .ebook-content .ebook-description {
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.ebooks .ebook-content .ebook-description .ebook-title {
+.ebooks-container .ebooks .ebook-content .ebook-description .ebook-title {
   color: #F0A500;
   font-weight: bold;
   line-height: 1.5em;
 }
-.ebooks .ebook-content .buttons {
+.ebooks-container .ebooks .ebook-content .buttons {
   display: flex;
   padding-right: 1rem;
   gap: 1rem;
 }
-.ebooks .ebook-content .buttons .btn {
+.ebooks-container .ebooks .ebook-content .buttons .btn {
   padding: 1rem 1rem;
   font-size: 1rem;
   font-weight: bold;
@@ -306,16 +309,15 @@ header .social-media img {
   cursor: pointer;
   text-decoration: none;
 }
-.ebooks .ebook-content .buttons .btn:hover {
+.ebooks-container .ebooks .ebook-content .buttons .btn:hover {
   background: #E45826;
   color: #1B1A17;
 }
-.ebooks .ebook-content:hover {
+.ebooks-container .ebooks .ebook-content:hover {
   border: 1px solid #E45826;
   box-shadow: 0 0 10px #E45826;
 }
-
-.telegram-community {
+.ebooks-container .telegram-community {
   padding: 3rem 9rem;
   background-color: #1B1A17;
   text-align: center;
@@ -323,12 +325,12 @@ header .social-media img {
   font-weight: bold;
   color: #E6D5B8;
 }
-.telegram-community a {
+.ebooks-container .telegram-community a {
   text-decoration: none;
   text-transform: uppercase;
   color: #E45826;
 }
-.telegram-community a:hover {
+.ebooks-container .telegram-community a:hover {
   text-shadow: 0 0 5px #E45826;
 }
 
@@ -366,5 +368,87 @@ header .social-media img {
   }
   .ebooks .ebook-content {
     width: 400px;
+  }
+}
+footer {
+  padding: 7rem 3rem 1rem 3rem;
+  background-color: #1B1A17;
+  color: #E6D5B8;
+}
+footer .footer-container {
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer-container div .logo-footer {
+  font-size: 2rem;
+  font-weight: 900;
+  padding-bottom: 1.5rem;
+  text-shadow: 0 0 10px #E45826;
+}
+footer .footer-container div .address {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+footer .footer-container .community-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+footer .footer-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+footer .footer-container ul a {
+  text-decoration: none;
+  color: #E6D5B8;
+  font-size: 0.9rem;
+}
+footer .footer-container ul a:hover {
+  color: #E45826;
+}
+footer .footer-container .info-contact .contact {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+footer .footer-container .info-contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+footer .footer-container .info-contact ul a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #E6D5B8;
+  font-size: 0.9rem;
+  gap: 0.5rem;
+}
+footer .footer-container .info-contact ul a img {
+  width: 18px;
+}
+footer .footer-container .info-contact ul a:hover {
+  color: #E45826;
+}
+footer .copywrite {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+footer .copywrite a {
+  text-decoration: none;
+  color: #E45826;
+}
+
+@media (max-width: 800px) {
+  footer {
+    padding: 7rem 0.5rem 1rem 0.5rem;
+  }
+  footer .footer-container {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
