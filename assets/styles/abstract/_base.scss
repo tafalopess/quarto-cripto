@@ -1,0 +1,23 @@
+@import "./../abstract/var";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+}
+
+.parallax-effect-1 {
+    background-image: url("./../images/parallax01.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parallax-effect-2 {
+    background-image: url("./../images/parallax02.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}

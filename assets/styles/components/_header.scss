@@ -1,0 +1,46 @@
+@import "./../abstract/var";
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .5rem 6.25rem;
+    background: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    color: $first-color;
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-shadow: 0 0 10px $second-color;
+    }
+
+    .nav-bar {
+        display: flex;
+        gap: 1rem;
+        .nav-links {
+            text-decoration: none;
+            color: $second-color;
+            font-weight: 500;
+        }
+
+        .nav-links:hover {
+            color: $third-color;
+            text-shadow: 0 0 3px $third-color;
+        }
+    }
+
+    .social-media {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        img {
+            width: 2rem;
+        }
+    }
+}

@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.parallax-effect-1 {
+  background-image: url("./../images/parallax01.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parallax-effect-2 {
+  background-image: url("./../images/parallax02.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 6.25rem;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  color: #1B1A17;
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px #F0A500;
+}
+header .nav-bar {
+  display: flex;
+  gap: 1rem;
+}
+header .nav-bar .nav-links {
+  text-decoration: none;
+  color: #F0A500;
+  font-weight: 500;
+}
+header .nav-bar .nav-links:hover {
+  color: #E45826;
+  text-shadow: 0 0 3px #E45826;
+}
+header .social-media {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+header .social-media img {
+  width: 2rem;
+}
+
+.main-container .presentation {
+  padding: 23rem 6rem;
+  width: 50%;
+}
+.main-container .presentation .presentation-content {
+  background: #E6D5B8;
+  padding: 3rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+.main-container .presentation .presentation-content .presentation-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1B1A17;
+  margin-bottom: 1.5rem;
+}
+.main-container .presentation .presentation-content .presentation-title span {
+  text-transform: uppercase;
+  color: #E45826;
+}
+.main-container .presentation .presentation-content .presentation-text {
+  color: #1B1A17;
+  font-weight: 500;
+}
+.main-container .presentation .presentation-content:hover {
+  box-shadow: 0 0 35px #E45826;
+}
+
+.cta .cta-content {
+  padding: 3rem 9rem;
+  background-color: #E45826;
+  text-align: center;
+}
+.cta .cta-content .cta-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1B1A17;
+  margin-bottom: 1.5rem;
+}
+.cta .cta-content .cta-title span {
+  text-transform: uppercase;
+  color: #F0A500;
+}
+.cta .cta-content .cta-text {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.cta .cta-content .cta-remind {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #F0A500;
+  font-weight: bold;
+}
+
+.courses-container {
+  padding-bottom: 6rem;
+}
+.courses-container .courses-container-title {
+  padding: 12rem 9rem 9rem 9rem;
+  color: #1B1A17;
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px #E6D5B8;
+}
+.courses-container .courses {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.courses-container .courses .course-content {
+  width: 300px;
+  height: 550px;
+  background: #1B1A17;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.courses-container .courses .course-content .course-img {
+  height: 40%;
+}
+.courses-container .courses .course-content .course-img img {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.courses-container .courses .course-content .course-title {
+  color: #E45826;
+  padding: 1rem;
+}
+.courses-container .courses .course-content .course-text {
+  color: #E6D5B8;
+  padding: 0 1rem 1rem 1rem;
+}
+.courses-container .courses .course-content .btn {
+  margin: 0 0.8rem 1rem 0.8rem;
+  padding: 0.3rem 0.3rem;
+  font-weight: bold;
+  color: #E45826;
+  background-color: #1B1A17;
+  border-radius: 0.4rem;
+  border: 2px solid #E45826;
+  cursor: pointer;
+}
+.courses-container .courses .course-content .buttons .btn:hover {
+  background: #E45826;
+  color: #1B1A17;
+}/*# sourceMappingURL=style.css.map */
