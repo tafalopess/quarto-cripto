@@ -246,9 +246,10 @@ header .social-media img {
   }
 }
 .ebooks-container {
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
-.ebooks-container .ebooks-container-title {
+
+.ebooks-container-title {
   padding: 12rem 9rem 9rem 9rem;
   color: #E6D5B8;
   font-weight: 900;
@@ -257,7 +258,8 @@ header .social-media img {
   text-transform: uppercase;
   text-shadow: 0 0 20px #1B1A17;
 }
-.ebooks-container .ebooks {
+
+.ebooks {
   width: 80%;
   margin: auto;
   padding-bottom: 9rem;
@@ -266,7 +268,7 @@ header .social-media img {
   flex-wrap: wrap;
   gap: 1rem;
 }
-.ebooks-container .ebooks .ebook-content {
+.ebooks .ebook-content {
   width: 500px;
   height: 200px;
   box-sizing: border-box;
@@ -276,29 +278,29 @@ header .social-media img {
   display: flex;
   flex-grow: 1;
 }
-.ebooks-container .ebooks .ebook-content .ebook-img img {
+.ebooks .ebook-content .ebook-img img {
   height: 100%;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-.ebooks-container .ebooks .ebook-content .ebook-description {
+.ebooks .ebook-content .ebook-description {
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.ebooks-container .ebooks .ebook-content .ebook-description .ebook-title {
+.ebooks .ebook-content .ebook-description .ebook-title {
   color: #F0A500;
   font-weight: bold;
   line-height: 1.5em;
 }
-.ebooks-container .ebooks .ebook-content .buttons {
+.ebooks .ebook-content .buttons {
   display: flex;
   padding-right: 1rem;
   gap: 1rem;
 }
-.ebooks-container .ebooks .ebook-content .buttons .btn {
+.ebooks .ebook-content .buttons .btn {
   padding: 1rem 1rem;
   font-size: 1rem;
   font-weight: bold;
@@ -309,33 +311,37 @@ header .social-media img {
   cursor: pointer;
   text-decoration: none;
 }
-.ebooks-container .ebooks .ebook-content .buttons .btn:hover {
+.ebooks .ebook-content .buttons .btn:hover {
   background: #E45826;
   color: #1B1A17;
 }
-.ebooks-container .ebooks .ebook-content:hover {
+.ebooks .ebook-content:hover {
   border: 1px solid #E45826;
   box-shadow: 0 0 10px #E45826;
 }
-.ebooks-container .telegram-community {
-  padding: 3rem 9rem;
+
+.telegram-community {
+  background-color: #1B1A17;
+}
+.telegram-community .telegram-community-title {
+  padding: 4rem 0;
   background-color: #1B1A17;
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
   color: #E6D5B8;
 }
-.ebooks-container .telegram-community a {
+.telegram-community .telegram-community-title a {
   text-decoration: none;
   text-transform: uppercase;
   color: #E45826;
 }
-.ebooks-container .telegram-community a:hover {
+.telegram-community .telegram-community-title a:hover {
   text-shadow: 0 0 5px #E45826;
 }
 
 @media (max-width: 640px) {
-  .telegram-community {
+  .ebooks-container .telegram-community {
     padding: 3rem;
   }
 }
